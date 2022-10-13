@@ -1,0 +1,691 @@
+* {
+    font-family: 'Raleway', sans-serif;
+}
+
+body {
+    margin-left : 40px;
+    margin-right : 50px;
+}
+
+
+/* Header (NavBAR + H1)*/
+
+nav {
+    display : flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top : 40px;
+    margin-bottom : 30px;
+}
+
+nav img{
+   width : 50%;
+   padding-left : 10%;
+}
+
+.listNavmobile {
+    display : none;
+    /* to specify in Mobile/Tablet Version later on */
+}
+
+.listNav a{
+    text-decoration: none;
+    color : black;
+    padding-left : 20px;
+    padding-right : 20px;
+    /* Static value, needs to be fixed?*/
+}
+
+.listNav {
+    display : flex;
+    list-style: none;
+    flex-direction : row;
+}
+
+.listNav a:hover {
+    color : #0065FC;
+    border-top: 3px solid #0065FC;
+    padding-top: 52px;
+}
+
+h1 {
+    font-size : 25px;
+    margin-bottom : -10px;
+}
+
+/* SearchBar */
+
+.searchbarbox {
+    display: flex;
+    flex-direction:row;
+    width : 27%;
+    height : 60px;
+    border: 3px solid #fff;
+    border-radius: 15px;
+    overflow:hidden;
+    box-shadow: 0 0px 0px #c1c1c1;
+    box-sizing: border-box;
+    margin-bottom : 25px;
+    background-color : white;
+}
+
+.Searbutton {
+    border-radius:0 15px 15px 0;
+    background-color: #0065FC;
+    border: none;
+    color:white;
+    font-weight: bold;
+    padding-left: 10px;
+    height : 50px;
+    width : 31%;
+}
+
+.dot {
+    width: 8%;
+    height: 50px;
+    background-color: #f2f2f2;
+    font-size: 18px;
+    border-radius:15px 0 0 15px;
+    padding-left: 5%;
+    padding-top: 17px;
+}
+
+.searchbarbox input {
+    font-weight: bold;
+    padding-left: 15px;
+    border : none;
+    outline : none;
+    width : 61%;
+}
+
+.SearchGlass {
+    display : none;
+    /* to specify in Mobile/Tablet Version later on */
+}
+
+/* Filters + Infos */
+
+    /*Filters*/
+.Filters p {
+    font-weight: bold;
+    font-size : 20px;
+    margin-right : 3%;
+}
+
+.Filters {
+    display: flex;    
+    flex-direction: row;
+}
+
+.FilterNoTitle {
+    display : flex;
+    flex-direction: row;   
+    width : 75%;
+}
+
+.FilterBox1 {
+    box-shadow: 0 0px 0px #c1c1c1;
+    box-sizing: border-box;
+    margin-bottom : 25px;
+    background-color : white;
+    margin-right : 8%;
+}
+
+.FilterBox1 button {
+    display : flex;
+    justify-content: space-between;
+    font-weight: bold;
+    background-color: white;
+    border-radius: 22px;
+    border-color: #EBF4F9;
+    border-width : 1px;
+    height : 48px;
+    width : 100%;
+    padding-top: 15px;
+    padding-right : 15px;
+}
+
+.FilterBox1 i{
+    background-color: #9EDCFE;
+    color: #0065FC;
+    border: 15px solid #9EDCFE;
+    border-radius: 50%;
+    margin-top : -19px;
+    margin-left : -7px;
+    font-size: 23px;   
+}
+
+.Filters button:hover {
+    cursor: pointer;
+    background-color: #0065FC;
+    color:white;
+}
+
+.filters_title {
+    padding-left : 15px;
+}
+
+.Infos {
+    display : flex;
+    flex-direction: row;
+    margin-bottom : 30px;
+}
+
+.I_infos {
+    display : flex;
+    height: 1,6%;
+    width: 1,6%;
+    border: 5px solid #fff;
+    border-radius: 50%;
+    box-shadow: 0 0px 3px #c1c1c1;
+    box-sizing: border-box;
+}
+
+.infoi {
+    background-color: white;
+    color:#0065FC;
+    font-size : 10px;
+    font-weight : bold;
+}
+
+.Infos span {
+    padding-left : 15px;
+}
+
+/* SECTION LODGING */
+
+    /* ARTICLE (LEFT SIDE OF SECTION) */
+article, aside {
+    background-color: #f2f2f2;
+    border-radius: 20px;
+    padding : 40px;
+}
+
+.Lodging {
+    display : flex;
+    justify-content: space-between;
+    width : 100%;
+}
+
+.Lodging > h2 {
+    margin : 10px;
+}
+
+article {
+    width : 67%;
+    margin-right : 3%;
+}
+
+.Lodgings {
+    display : flex;
+    justify-content: space-between;
+    width : 100%;
+    flex-wrap : wrap;
+    margin-bottom : 50px;
+}
+
+.LodgingGrid {
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+    width : 28%;
+    border: 5px solid #fff;
+    border-radius: 15px;
+    overflow:hidden;
+    box-shadow: 0 0px 6px #c1c1c1;
+    box-sizing: border-box;
+    margin-bottom : 25px;
+    background-color : white;
+}
+
+.Lodging img {
+    height: 120px;
+    width: 100%;
+    object-fit:cover;
+}
+
+
+.Lodgings .DescripHotels {
+    padding-left : 10px;
+}
+
+.DescripHotels p{
+    margin : 3px;
+}
+
+.ratings {
+    word-spacing: -4px;
+}
+
+.fa-star{
+    font-size: 0.8rem;
+    letter-spacing: 2px;
+}
+
+.blue {
+    color : #0065FC;
+}
+
+.grey {
+    color : #f2f2f2; 
+}
+
+.HotelName {
+    font-weight:bold;
+}
+
+.AfficherA {
+    text-decoration: none;
+    font-weight: bold;
+    color : black;
+    font-size : 18px;
+}
+
+.LodgingGrid:hover {
+    transform: scale(1.1);
+}
+
+    /* ASIDE (RIGHT SIDE OF SECTION */
+
+aside {
+    width : 30%;
+}
+
+.Popularbox {
+    display: flex;
+    height: 150px;
+    width : 100%;
+    border: 5px solid #fff;
+    border-radius: 15px;
+    overflow:hidden;
+    box-shadow: 0 0px 6px #c1c1c1;
+    box-sizing: border-box;
+    margin-bottom : 25px;
+}
+
+.DescripHotel {
+    padding-left : 5%;
+    width : 62%;
+    background-color : white;
+}
+
+.popular img {
+    height: 150px;
+    width: 38%;
+    object-fit:cover;
+}
+
+.Popularbox:hover {
+    transform: scale(1.1);
+}
+
+h2 {
+    display : flex;
+    justify-content: space-between;
+    width : 100%;
+}
+
+.Popularbox .ratings {
+    padding-top : 11%;
+}
+
+.etoil {
+    font-size : 25px;
+}
+
+.StrongEuro {
+    font-weight: bold;
+}
+
+/* ACTIVITIES */
+
+.Activities {
+    display : flex;
+    justify-content: space-between;
+}
+
+.column1 .ActivitiesBox {
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+    width: 320px;
+    border-radius: 15px;
+    box-shadow: 0 0px 6px #c1c1c1;
+    margin-bottom: 30px;
+    margin-left: 10px;
+}
+
+.column2 .ActivitiesBox {
+    display: flex;
+    flex-direction : column;
+    height: 220px;
+    width : 320px;
+
+    border-radius: 15px;
+    box-shadow: 0 0px 6px #c1c1c1;
+    margin-bottom : 35px;
+    margin-left : 10px;
+}
+
+.column3 .ActivitiesBox {
+    display: flex;
+    flex-direction : column;
+    height: 150px;
+    width : 320px;
+
+    border-radius: 15px;
+    box-shadow: 0 0px 6px #c1c1c1;
+    margin-bottom : 10px;
+    margin-left : 10px;
+}
+
+.column4 .ActivitiesBox {
+    display: flex;
+    flex-direction : column;
+    height: 170px;
+    width : 320px;
+    border-radius: 15px;
+    box-shadow: 0 0px 6px #c1c1c1;
+    margin-bottom : 30px;
+    margin-left : 10px;    
+}
+
+.column5 .ActivitiesBox {
+    display: flex;
+    flex-direction : column;
+    height: 200px;
+    width : 320px;
+    border-radius: 15px;
+    box-shadow: 0 0px 6px #c1c1c1;
+    margin-bottom : 10px;
+    margin-left : 10px;
+}
+
+.column1 .ActivitiesBox:hover, .column2 .ActivitiesBox:hover, .column3 .ActivitiesBox:hover, .column4 .ActivitiesBox:hover, .column5 .Activities:hover{
+    transform:scale(1.1);
+}
+
+
+.column1 img {
+    height: 200%;
+    width: 100%;
+    object-fit:cover;
+    margin-bottom: 15px;
+    border-radius:15px 15px 0 0;
+    padding-top: 0;
+}
+
+.column3 img {
+    height: 75%;
+    width: 100%;
+    object-fit:cover;
+    margin-bottom : 10px;
+}
+
+.column2 img {
+    height: 78%;
+    width: 100%;
+    object-fit:cover;
+    margin-bottom : 15px;
+}
+
+.column4 img {
+    height: 78%;
+    width: 100%;
+    object-fit:cover;
+    margin-bottom : 10px;
+}
+
+.column5 img {
+    height: 78%;
+    width: 100%;
+    object-fit:cover;
+    margin-bottom : 10px;
+}
+
+.DescripHotels {
+    height : 20%;
+    width : 100%;
+    padding-left : 4%;
+}
+
+.column1 {
+    flex-direction:column;
+}
+
+.column2 {
+    flex-direction:column;
+}
+
+.column3 {
+    flex-direction:column;
+}
+
+.column4 {
+    flex-direction:column;
+}
+
+/* FOOTER */ 
+
+footer {
+    display : flex;
+    background-color: #f2f2f2;
+}
+
+footer ul {
+    list-style: none;
+    margin-left : -40px;
+}
+
+footer li {
+    margin-bottom : 15px;
+}
+
+.Lien {
+    text-decoration: none;
+    color : black;
+}
+
+.col1 {
+    padding-left : 50px;
+    margin-right : 400px;
+}
+
+.col2 {
+    margin-right : 400px;
+}
+
+@media screen and (max-width : 768px) {
+    body {
+        width : 100%;
+        padding : 0;
+        margin : 0;
+    }
+/*NAVBAR */
+    nav {
+        margin : 0;
+        padding : 0;
+        flex-direction : column;
+    }
+    .logo img {
+        width : 120px;
+        height : 80px;
+        padding-left : 130px;
+    }
+    .listNav a {
+        display : none;
+    }
+    .listNavmobile {
+        display: block;
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+        justify-content: space-between;
+    }
+    .listNavmobile a {
+        text-decoration: none;
+        color : black;    
+        border-bottom: 4px solid #c1c1c1;
+        padding-bottom: 8px;
+    }
+    .listNavmobile a:hover {
+        color : #0065FC;
+        border-bottom: 4px solid #0065FC;
+        padding-bottom: 8px;
+    }
+    /* Need to fix hover and non-hover borderbottom line needs 100% width of the page. */
+
+/* Header */
+    .Searbutton {
+        display : none;
+    }
+    .searchbarbox {
+        width : 95%;
+    }
+    .SearchGlass {
+        display : block;
+        border-radius:0 15px 15px 0;
+        background-color: #0065FC;
+        border: none;
+        color:white;
+        font-weight: bold;
+        padding-left: 10px;
+        height : 50px;
+        width : 15%; 
+    }
+    .searchbarbox input {
+        width : 75%;
+    }
+    .dot {
+        width : 8%;
+    }
+
+/*Filters*/
+    .Filters {
+        flex-direction: column;
+        margin-left : 10px;
+    }
+    .FilterNoTitle {
+        width : 100%;
+        flex-direction : row;
+        flex-wrap : wrap;
+        justify-content: flex-start;
+        
+    }
+    .FilterBox1 {
+        margin-right : 2%;
+    }
+    .Filters p {
+        margin-right : 40px;
+    }
+/*Info*/
+    .Infos {
+        padding-left : 4%;
+    }
+
+    .I_infos {
+        height : 20px;
+        width : 4.6%;
+    }
+
+    .infoi {
+    }
+
+    .Infos span {
+        padding-left : 15px;
+    }
+
+/*Section Lodging */
+    section {
+        flex-direction : column-reverse;
+    }
+    aside {
+        width: 100%;
+        border-radius: 0;        
+        padding : 0;
+        margin : 0;
+    }
+    h2 {
+        width : 90%;
+        padding-left : 5%;
+    }
+    .popular {
+        padding-left: 5%;
+    }
+    .Popularbox {
+        width : 94%;
+    }
+    article {
+        background-color: white;
+        width :100%;
+        padding : 0;
+        margin : 0;
+    }
+    .Lodgings {
+        flex-direction:column;
+        padding : 0;
+        margin : 0;
+        padding-left : 5%;
+        width : 95%;
+    }
+    .LodgingGrid {
+        width : 89.3%;
+        
+    }
+/*Section Activities*/
+    .Activities {
+        flex-direction: column;
+        padding : 0;
+        margin : 0;
+        width : 94%;
+        padding-left : 3.5%;
+    }
+    .column1 .ActivitiesBox, .column2 .ActivitiesBox, 
+    .column3 .ActivitiesBox, .column4 .ActivitiesBox,
+    .column5 .Activities{
+        display: flex;
+        flex-direction : column;
+        height: 200px;
+        width : 89.4%;
+        border-radius: 15px;
+        overflow:hidden;
+        box-shadow: 0 0px 15px #c1c1c1;
+        box-sizing: border-box;
+    }
+
+
+    .column1 img, .column2 img, .column3 img, .column4 img, .column5 img {
+        height : 70%;
+    }
+
+    .DescripHotels {
+        padding-top : 2%;
+        width : 90%;
+    }
+    .AfficherA {
+        padding-left : 4.5%;
+    }
+/*Footer*/
+    footer {
+        flex-direction : column;
+        width : 94%;
+        padding-left: 5%;
+        margin : 0;
+    }
+    .col1 {
+        padding : 0;
+        margin : 0;
+        width : 100%;
+    }
+    .col2 {
+        width : 100%;
+        margin : 0;
+    }
+    .col3 {
+        margin : 0;
+        width : 100%;
+    }
+}
+
+/* Padding individuel pour chaque "section" */ 
+/* VBody a 100% width et pas de padding */
